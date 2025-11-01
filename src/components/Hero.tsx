@@ -34,7 +34,7 @@ export const Hero = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-base text-slate-900 bg-zinc-200 hover:bg-zinc-100">
+              <Button size="lg" variant="outline" className="border-white text-base text-slate-900 bg-lime-600 hover:bg-lime-500">
                 {t('learnMore')}
               </Button>
             </div>
