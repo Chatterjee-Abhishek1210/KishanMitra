@@ -2,12 +2,11 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link } from 'react-router-dom';
-
 export const Hero = () => {
-  const { t } = useLanguage();
-
-  return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-primary via-primary-light to-secondary min-h-[500px] flex items-center">
+  const {
+    t
+  } = useLanguage();
+  return <div className="relative overflow-hidden bg-gradient-to-br from-primary via-primary-light to-secondary min-h-[500px] flex items-center">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4xIiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PC9zdmc+')] opacity-20"></div>
       
@@ -35,7 +34,7 @@ export const Hero = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white text-base text-slate-900 bg-lime-500 hover:bg-lime-400">
                 {t('learnMore')}
               </Button>
             </div>
@@ -56,17 +55,9 @@ export const Hero = () => {
             <div className="bg-white rounded-lg shadow-2xl p-6 space-y-4">
               <h3 className="text-xl font-bold text-primary">{t('topSchemes')}</h3>
               <div className="space-y-3">
-                {[
-                  'Agri Sure Fund for Start Ups & Rural Enterprises',
-                  'Agriculture Infrastructure Fund',
-                  'Animal Husbandry Infrastructure Development Fund',
-                  'National Livestock Mission - NLM',
-                  'National Horticulture Board'
-                ].map((scheme, idx) => (
-                  <div key={idx} className="p-3 rounded-lg border hover:border-primary hover:bg-primary/5 transition-all cursor-pointer">
+                {['Agri Sure Fund for Start Ups & Rural Enterprises', 'Agriculture Infrastructure Fund', 'Animal Husbandry Infrastructure Development Fund', 'National Livestock Mission - NLM', 'National Horticulture Board'].map((scheme, idx) => <div key={idx} className="p-3 rounded-lg border hover:border-primary hover:bg-primary/5 transition-all cursor-pointer">
                     <p className="text-sm font-medium">{scheme}</p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
               <Button variant="link" className="text-primary p-0">
                 {t('viewMore')} <ArrowRight className="ml-2 h-4 w-4" />
@@ -75,6 +66,5 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
