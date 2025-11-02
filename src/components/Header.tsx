@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Leaf, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -42,12 +42,17 @@ export const Header = () => {
         {/* Main navigation */}
         <div className="flex h-20 items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary-light">
-              <Leaf className="h-8 w-8 text-white" />
+            <div className="flex h-14 w-14 items-center justify-center">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" 
+                alt="Government of India" 
+                className="h-14 w-14 object-contain"
+              />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-primary">AI-Kisan</h1>
-              <p className="text-xs text-muted-foreground">{t('heroSubtitle')}</p>
+              <div className="text-sm text-muted-foreground mb-1">कृषि एवं किसान कल्याण विभाग</div>
+              <h1 className="text-lg font-bold text-primary leading-tight">DEPARTMENT OF AGRICULTURE & FARMERS WELFARE</h1>
+              <p className="text-xs text-muted-foreground">MINISTRY OF AGRICULTURE & FARMERS WELFARE</p>
             </div>
           </Link>
 

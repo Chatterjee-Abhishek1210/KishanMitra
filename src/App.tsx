@@ -14,6 +14,13 @@ import DiseaseDetection from "./pages/DiseaseDetection";
 import MarketPrices from "./pages/MarketPrices";
 import GovernmentSchemes from "./pages/GovernmentSchemes";
 import Profile from "./pages/Profile";
+import AboutUs from "./pages/AboutUs";
+import Schemes from "./pages/Schemes";
+import Sectors from "./pages/Sectors";
+import MediaCorner from "./pages/MediaCorner";
+import InvestmentOpportunities from "./pages/InvestmentOpportunities";
+import Weather from "./pages/Weather";
+import Chatbot from "./pages/Chatbot";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +43,13 @@ const App = () => (
               <Route path="/market-prices" element={<MarketPrices />} />
               <Route path="/government-schemes" element={<GovernmentSchemes />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/schemes" element={<Schemes />} />
+              <Route path="/sectors" element={<Sectors />} />
+              <Route path="/media" element={<MediaCorner />} />
+              <Route path="/investment" element={<InvestmentOpportunities />} />
+              <Route path="/weather" element={<Weather />} />
+              <Route path="/chatbot" element={<Chatbot />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

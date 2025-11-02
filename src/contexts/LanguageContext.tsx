@@ -24,8 +24,8 @@ const translations: Record<Language, Record<string, string>> = {
     logout: 'Logout',
     
     // Hero
-    heroTitle: 'AI-Kisan',
-    heroSubtitle: 'Intelligent Agriculture Platform',
+    heroTitle: 'KisanMitra',
+    heroSubtitle: 'AI-Powered Agricultural Assistant',
     heroDescription: 'Empowering farmers with AI-driven crop recommendations, disease detection, market insights, and government scheme guidance.',
     getStarted: 'Get Started',
     learnMore: 'Learn More',
@@ -48,10 +48,28 @@ const translations: Record<Language, Record<string, string>> = {
     cropRecommendationDesc: 'Get AI-powered suggestions for optimal crops based on soil and climate',
     diseaseDetection: 'Disease Detection',
     diseaseDetectionDesc: 'Identify plant diseases instantly using image recognition',
+    cropDiseaseDetection: 'Crop Disease Detection',
+    cropDiseaseDetectionDesc: 'Upload a crop image to detect diseases using AI',
     marketPrices: 'Market Prices',
     marketPricesDesc: 'Real-time market price predictions and trends',
     govSchemes: 'Government Schemes',
     govSchemesDesc: 'Personalized government scheme recommendations',
+    fertilizerRecommendation: 'Fertilizer Recommendation',
+    fertilizerRecommendationDesc: 'Optimize your fertilizer usage with AI-powered suggestions',
+    weatherForecast: 'Weather Forecast',
+    weatherForecastDesc: 'Get accurate weather predictions for better farm planning',
+    chatbot: 'AI Chatbot Assistant',
+    chatbotDesc: 'Ask me anything about farming in your language',
+    
+    // Soil Analysis
+    soilAnalysis: 'Soil Analysis',
+    soilAnalysisDesc: 'Upload soil image or enter parameters manually',
+    soilCropInfo: 'Soil & Crop Information',
+    soilCropInfoDesc: 'Upload soil image or enter parameters manually',
+    uploadCropImage: 'Upload Crop Image',
+    uploadCropImageDesc: 'Take a clear photo of the affected plant part',
+    todayMandiRates: "Today's Mandi Rates",
+    todayMandiRatesDesc: 'Live prices from nearest markets',
     
     // Auth
     signIn: 'Sign In',
